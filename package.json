@@ -9,5 +9,10 @@
   "engines": {
     "node": "15.4.0",
     "nmp": "7.0.15"
-  }
+  },
+
+    "scripts": {
+        "start": "node index.js"
+    }
+
 }
