@@ -4,7 +4,7 @@ var Food = require("./food");
 const path = require('path');
 
 // GET all
-router.get('/Home', (req, res)=>{
+router.get('/', (req, res)=>{
   // res.send('<form action="/test/post-username" method="POST"> <input type="text" name="username">    <button type="submit"> Send </button> </form>');
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
