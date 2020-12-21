@@ -1,0 +1,106 @@
+body{
+    
+    margin :0;
+    padding :0;
+}
+@media screen and (min-width :650px){
+    .nav{
+        position:fixed;
+        width:100%;
+        z-index: 1;
+        top:0;
+    }  
+}    
+  
+.nav ul{
+    list-style: none;
+    background-color: rgba(5, 153, 252, 0.911);      
+    text-align: center;
+    margin :0;
+    padding: 0;
+    border-bottom: none;
+    display: none;
+}
+.nav li{
+    font-size: 1.2em;
+    font-family: 'kanit' ,sans-serif;
+    line-height: 40px;
+    text-align: left;
+}
+.nav a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888 ;
+    transition: .3s;
+}
+.nav a:hover{
+    background-color: rgb(6, 224, 240);
+}
+.nav a.active1{
+    background-color:rgb(6, 224, 240) ;
+    color :#fff;
+    cursor: default;
+}
+.nav li li{
+    font-size: 0.7em;
+}
+/* show on large screen */
+@media screen and (min-width:650px){
+     
+    .nav ul{
+        display: block;
+    }
+    .nav li{
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+    .nav a{
+        border-bottom: none;
+    }
+    .nav > ul >li {
+        text-align: center;
+    }
+    .nav ul > li > a{
+        padding-left: 0;
+    }
+    .nav li ul {
+        position: absolute;
+        display:none;
+        width: inherit;
+    }
+    .nav li:hover ul{
+        display: block;
+    }
+}
+.column.side .nav1 ul{
+    list-style: none;
+    background-color:  rgba(5, 153, 252, 0.911);   
+    text-align: center;
+    margin :0;
+    padding: 0;
+}
+.column.side .nav1 li{
+    font-size: .8em;
+    font-family: 'kanit' ,sans-serif;
+    line-height: 40px;
+    text-align: left;
+}
+.column.side .nav1 a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888 ;
+    transition: .3s;
+}
+.column.side .nav1 a:hover{
+    background-color: rgb(6, 224, 240);
+}
+

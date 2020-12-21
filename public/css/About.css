@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    margin :0;
+    padding :0;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.column.side ul{
+    list-style: none;
+    background-color:  rgba(5, 153, 252, 0.911);   
+    text-align: center;
+    margin :0;
+    padding: 0;
+}
+.column.side li{
+    font-size: .8em;
+    font-family: 'kanit' ,sans-serif;
+    line-height: 40px;
+    text-align: left;
+}
+.column.side a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888 ;
+    transition: .3s;
+}
+.column.side a:hover{
+    background-color: rgb(6, 224, 240);
+}
+.column a.active{
+    background-color:rgb(6, 224, 240) ;
+    color :#fff;
+    cursor: default;
+}
+
+.column.middle .nav  li{ /* กำหนดขอบเขตของเมนู */
+    width: 120px;
+    border-bottom: none;
+    height: 20px;
+    line-height: 10px;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: -10px;
+    text-align: center;
+    font-family: 'kanit',sans-serif;
+ 
+}
+.column.middle .nav p{ /* กำหนดขอบเขตของเมนู */
+    width: 10px;
+    border-bottom: none;
+    height: 20px;
+    line-height: 10px;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: -4px;
+    text-align: center;
+
+}
+.column.middle .nav a{ /* กำหนดรูปแบบให้กับลิ้งค์ */
+    border-bottom: none;
+    padding-left: 0;
+    text-decoration: none;
+    color: white;
+    
+}
+.column.middle .nav p{ /* กำหนดรูปแบบให้กับลิ้งค์ */
+    border-bottom: none;
+    padding-left: 0;
+    text-decoration: none;
+    color: white;
+
+
+}

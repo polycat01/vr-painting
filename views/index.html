@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VR-PAINTING WEB PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/manustyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Contentstyle.css">
+    <link rel="stylesheet" href="/css/w3style.css">
+    <link rel="stylesheet" href="/css/Gallery.css">
+    <link rel="stylesheet" href="/css/Spinimg.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+
+<body>
+    <div class="nav">
+        <ul>
+            <li class="Logo"><img src="/img/LOGO.png" width="50" style="vertical-align: middle;"></li>
+            <li class="Home"><a class="active1" href="#">Home</a></li>
+            <li Class="About"><a href="#">About</a>
+                <ul>
+                    <li><a href="/About/vr-painting">ประวัติความเป็นมา</a></li>
+                    <li><a href="/About/powderCoat">สีฝุ่นคืออะไร</a></li>
+                    <li><a href="/About/preparation">การเตรียมผิว</a></li>
+                    <li><a href="/About/example-work">ตัวอย่างผลงาน</a></li>
+                </ul>
+            </li>
+            <li class="Contact"><a href="/contact-us">Contact</a></li>
+            <li class="Location"><a href="/location">Location</a></li>
+        </ul>
+    </div>
+    <header style="padding-top: 55px;">
+        <script src="/js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.jssor_1_slider_init = function () {
+
+                var jssor_1_SlideoTransitions = [
+                    [{ b: -1, d: 1, ls: 0.5 }, { b: 0, d: 1000, y: 5, e: { y: 6 } }],
+                    [{ b: -1, d: 1, ls: 0.5 }, { b: 200, d: 1000, y: 25, e: { y: 6 } }],
+                    [{ b: -1, d: 1, ls: 0.5 }, { b: 400, d: 1000, y: 45, e: { y: 6 } }],
+                    [{ b: -1, d: 1, ls: 0.5 }, { b: 600, d: 1000, y: 65, e: { y: 6 } }],
+                    [{ b: -1, d: 1, ls: 0.5 }, { b: 800, d: 1000, y: 85, e: { y: 6 } }],
+                    [{ b: -1, d: 1, ls: 0.5 }, { b: 500, d: 1000, y: 195, e: { y: 6 } }],
+                    [{ b: 0, d: 2000, y: 30, e: { y: 3 } }],
+                    [{ b: -1, d: 1, rY: -15, tZ: 100 }, { b: 0, d: 1500, y: 30, o: 1, e: { y: 3 } }],
+                    [{ b: -1, d: 1, rY: -15, tZ: -100 }, { b: 0, d: 1500, y: 100, o: 0.8, e: { y: 3 } }],
+                    [{ b: 500, d: 1500, o: 1 }],
+                    [{ b: 0, d: 1000, y: 380, e: { y: 6 } }],
+                    [{ b: 300, d: 1000, x: 80, e: { x: 6 } }],
+                    [{ b: 300, d: 1000, x: 330, e: { x: 6 } }],
+                    [{ b: -1, d: 1, r: -110, sX: 5, sY: 5 }, { b: 0, d: 2000, o: 1, r: -20, sX: 1, sY: 1, e: { o: 6, r: 6, sX: 6, sY: 6 } }],
+                    [{ b: 0, d: 600, x: 150, o: 0.5, e: { x: 6 } }],
+                    [{ b: 0, d: 600, x: 1140, o: 0.6, e: { x: 6 } }],
+                    [{ b: -1, d: 1, sX: 5, sY: 5 }, { b: 600, d: 600, o: 1, sX: 1, sY: 1, e: { sX: 3, sY: 3 } }]
+                ];
+
+                var jssor_1_options = {
+                    $AutoPlay: 1,
+                    $LazyLoading: 1,
+                    $CaptionSliderOptions: {
+                        $Class: $JssorCaptionSlideo$,
+                        $Transitions: jssor_1_SlideoTransitions
+                    },
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$,
+                        $SpacingX: 20,
+                        $SpacingY: 20
+                    }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 3000;
+
+                function ScaleSlider() {
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+                    var containerWidth = containerElement.clientWidth;
+
+                    if (containerWidth) {
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+            };
+        </script>
+        <link
+            href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic"
+            rel="stylesheet" type="text/css" />
+
+        <svg viewbox="0 0 0 0" width="0" height="0" style="display:block;position:relative;left:0px;top:0px;">
+            <defs>
+                <filter id="jssor_1_flt_1" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stddeviation="4"></feGaussianBlur>
+                </filter>
+                <radialGradient id="jssor_1_grd_2">
+                    <stop offset="0" stop-color="#fff"></stop>
+                    <stop offset="1" stop-color="#000"></stop>
+                </radialGradient>
+                <mask id="jssor_1_msk_3">
+                    <path fill="url(#jssor_1_grd_2)" d="M600,0L600,400L0,400L0,0Z" x="0" y="0"
+                        style="position:absolute;overflow:visible;"></path>
+                </mask>
+            </defs>
+        </svg>
+        <div id="jssor_1"
+            style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;visibility:hidden;">
+
+            <div data-u="loading" class="jssorl-009-spin"
+                style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/img/spin.svg" />
+            </div>
+            <div data-u="slides"
+                style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;">
+                <div>
+                    <img data-u="image" style="opacity:1;" data-src="/img/Banner-1.png" />
+                    <div data-ts="flat" data-p="275" data-po="40% 50%"
+                        style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                        <img data-to="50% 50%" data-t="0"
+                            style="left:50px;top:520px;width:400px;height:100px;position:absolute;width:200px;height:150px;position:absolute;max-width:200px;"
+                            data-src="/img/logo-vr.png" />
+                        <img data-to="50% 50%" data-t="1"
+                            style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;width:200px;height:150px;position:absolute;max-width:200px;"
+                            data-src="/img/logo-vr.png" />
+                        <img data-to="50% 50%" data-t="2"
+                            style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;width:200px;height:150px;position:absolute;max-width:200px;"
+                            data-src="/img/logo-vr.png" />
+                        <img data-to="50% 50%" data-t="3"
+                            style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;width:200px;height:150px;position:absolute;max-width:200px;"
+                            data-src="/img/logo-vr.png" />
+                        <img data-to="50% 50%" data-t="4"
+                            style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;width:200px;height:150px;position:absolute;max-width:200px;"
+                            data-src="/img/logo-vr.png" />
+                        <div data-to="50% 50%" data-t="5"
+                            style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#0d0d0e;font-family:'Roboto Condensed',sans-serif;font-size:50px;font-weight:900;">
+                            <br />บริการ <br />รับ <br />พ่นสีฝุ่น</div>
+                    </div>
+                </div>
+                <div>
+                    <img data-u="image" style="opacity:1" data-src="/img/Banner-2.png" />
+                    <div data-ts="flat" data-p="540" data-po="40% 50%"
+                        style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                        <div data-to="50% 50%" data-ts="preserve-3d" data-t="6"
+                            style="left:350px;top:360px;width:900px;height:500px;position:absolute;">
+                            <svg viewbox="0 0 800 60" data-to="50% 50%" width="800" height="60" data-t="7"
+                                style="left:0px;top:-70px;display:block;position:absolute;opacity:0;font-family:'kanit',sans-serif;font-size:50px;font-weight:700;letter-spacing:0.05em;overflow:visible;">
+                                <text fill="#454447" stroke="#ff9500" stroke-width="2" text-anchor="middle" x="400"
+                                    y="60">รับพ่นสีเหล็ก
+                                </text>
+                            </svg>
+                            <div data-to="50% 50%" data-t="8"
+                                style="left:200px;top:0px;width:600px;height:60px;position:absolute;opacity:0;color:#0e0d0c;font-family:Roboto Condensed, sans-serif;font-size:48px;line-height:1.2;letter-spacing:0.1em;text-align:center;">
+                                งานชุบซิงค์ ชุบEDP</div>
+                            <svg viewbox="0 0 800 100" width="800" height="100" data-t="9"
+                                style="left:40px;top:250px;display:block;position:absolute;opacity:0;font-family:'kanit',sans-serif;font-size:50px;font-weight:900;letter-spacing:0.5em;overflow:visible;">
+                                <text fill="rgba(255,255,255,0.7)" stroke="#ff9500" text-anchor="middle" x="400"
+                                    y="100">STAINLESS ALUMINIUM
+                                </text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img data-u="image" style="opacity:.7;" data-src="/img/Banner-3.png" />
+                    <div data-ts="flat" data-p="1080"
+                        style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                        <svg viewbox="0 0 600 400" data-ts="preserve-3d" width="600" height="400"
+                            data-tchd="jssor_1_msk_3"
+                            style="left:255px;top:0px;display:block;position:absolute;overflow:visible;">
+                            <g mask="url(#jssor_1_msk_3)">
+                                <path data-to="300px -180px" fill="none" stroke="rgba(250,251,252,0.5)"
+                                    stroke-width="20" d="M410-350L410-10L190-10L190-350Z" x="190" y="-350" data-t="10"
+                                    style="position:absolute;overflow:visible;"></path>
+                            </g>
+                        </svg>
+                        <svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="11"
+                            style="left:-800px;top:78px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;overflow:visible;">
+                            <text fill="#fafbfc" text-anchor="middle" x="400" y="72">การเตรียมผิว
+                            </text>
+                        </svg>
+                        <svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="12"
+                            style="left:1600px;top:153px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:60px;font-weight:900;overflow:visible;">
+                            <text fill="#fafbfc" text-anchor="middle" x="400" y="72">ด้วยบ่อล้างงาน
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <img data-u="image" data-src="" />
+                    <div data-ts="flat" data-p="1080"
+                        style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                        <div data-to="50% 50%" data-t="13"
+                            style="left:100px;top:-20px;width:800px;height:200px;position:absolute;opacity:0;">
+                            <div
+                                style="left:94px;top:35px;width:480px;height:90px;position:absolute;color:rgba(74,217,205,0.5);font-family:'Roboto Condensed',sans-serif;font-size:72px;line-height:1.2;">
+                                ระบบ QC </div>
+                            <div
+                                style="left:307px;top:115px;width:400px;height:50px;position:absolute;color:rgba(74,217,205,0.5);font-family:'Roboto Condensed',sans-serif;font-size:42px;line-height:1.1;text-align:center;background-color:rgba(72,77,76,0.5);">
+                                ป้องกันการหลุดรอดของงานเสีย</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img data-u="image" data-src="/img/wine-1600.jpg" />
+                    <div data-ts="flat" data-p="1080"
+                        style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                        <img data-to="50% 50%" data-t="14"
+                            style="left:690px;top:140px;width:344px;height:157px;position:absolute;opacity:0;max-width:500px;"
+                            data-src="/img/Care2.png" />
+                        <img data-to="50% 50%" data-t="15"
+                            style="left:780px;top:350px;width:344px;height:157px;position:absolute;opacity:0;max-width:500px;"
+                            data-src="/img/Care1.png" />
+                        <img data-to="50% 50%" data-t="16"
+                            style="left:1280px;top:50px;width:200px;height:150px;position:absolute;opacity:0;max-width:200px;"
+                            data-src="/img/logo-vr.png" />
+                    </div>
+                </div>
+            </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
+
+            <div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;"
+                data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;"
+                data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;"
+                data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div>
+        </div>
+        <script type="text/javascript">jssor_1_slider_init();
+        </script>
+    </header>
+    <!--CONTENT-->
+    <div class="row">
+        <div class="column side">
+            <div class="nav1">
+                <ul>
+                    <li class="powder coating"><a href="/contact-us">Contact Us</a></li>
+                    <li class="VR-PAINTING"><a href="/location">Location</a></li>
+                    <li class="VR-PAINTING"><a href="/About/vr-painting">Vr-painting</a></li>
+                    <li class="powder coating"><a href="/About/powderCoat">powder coating</a></li>
+                    <li class="การเตรียมผิว"><a href="/About/preparation">การเตรียมผิว</a></li>
+                    <li class="ตัวอย่างผลงาน"><a href="/About/example-work">ตัวอย่างผลงาน</a></li>
+                </ul>
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B9%88%E0%B8%99%E0%B8%AA%E0%B8%B5%E0%B8%9D%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B8%94-By-VRpainting-794227757645326%2F&tabs=timeline&width=260&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="300" height="300" class="responsive2" style="padding-top:20px;border:none;overflow:hidden"
+                    scrolling="no" frameborder="0" allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+            </div>
+        </div>
+        <div class="column middle"
+            style="background-attachment:fixed;background-image:url(img/Banner2.png);background-repeat:no-repeat;max-width: 1000;background-color: rgb(23, 142, 247);">
+            <div>
+                <h2>ความหมายของสีฝุ่น?</h2>
+                <img src="/img/Powdercoat.png" class="responsive" width="500" height="200"
+                    style="padding-top: 20px; padding-bottom: 15px;">
+                <button style="background-color: rgb(12, 9, 240);"><a
+                        style="text-decoration: none;font-family:'kanit',sans-serif;color: aliceblue;"
+                        href="PowderCoat.html">อ่านเพิ่มเติม</a></button><br />
+
+
+                <h2 style="padding-top:70px;">ขั้นตอนก่อนขึ้นพ่นสีมีอะไรบ้าง?</h2>
+                <img src="/img/vr-pic02.png" class="responsive" width="620" height="300"
+                    style=" max-width: 650px; padding-top: 20px; padding-bottom: 15px;">
+                <button style="background-color: rgb(12, 9, 240);"><a
+                        style="text-decoration: none;font-family:'kanit',sans-serif;color: aliceblue;"
+                        href="การเตรียมผิว.html">อ่านเพิ่มเติม</a></button><br />
+
+                <h2 style="padding-top: 70px;">ประวัติความเป็นมา</h2>
+                <img src="/img/BG.jpg" class="responsive" width="620" height="300"
+                    style=" max-width: 650px; padding-top: 20px; padding-bottom: 15px;">
+                <button style="background-color: rgb(12, 9, 240);"><a
+                        style="text-decoration: none;font-family:'kanit',sans-serif;color: aliceblue;"
+                        href="vr-painting.html">อ่านเพิ่มเติม</a></button><br />
+            </div>
+        </div>
+        <div class="column side">
+            <div class="column side">
+                <form action="auth" method="post"
+                    style="background-attachment:fixed;background-image:url(/img/Banner2.png);background-repeat:no-repeat;max-width: 1000;background-color: rgb(23, 142, 247);">
+                    <div class="imgcontainer">
+                        <h6 style="color: white;">LOG IN FOR ADMIN ONLY</h6>
+                    </div>
+
+                    <div class="containerlogin">
+                        <label style="margin: 8px 15px;" for="uname"><b style="color: white;">Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+
+                        <label style="margin: 8px 15px;" for="psw"><b style="color: white;">Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+
+                        <button style="  background-color: #4CAF50;
+                      color: white;
+                      padding: 10px 20px;
+                      margin: 8px 50px;
+                      border: none;
+                      cursor: pointer;
+                      width: 150px;
+                    " type="submit">Login</button>
+
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <footer class="footer-container">
+        <div class="padding-16">
+            <p style="color:white;">Copyright © 2020 All Rights Reserved</p>
+            <img src="/img/LOGO.png" width="25" height="15">
+            <p style="color: white;font-size:10px;font-family: 'kanit',sans-serif;">หจก.วีอาร์ เพ้นท์ติ้ง โพดักส์
+            </p>
+            <p style="color: white;font-size:10px;font-family: 'kanit',sans-serif;">71/3 หมู่ที่ 4 ต.แพรกษา อ.เมือง
+                จ.สมุทรปราการ 10280</p>
+            <h6 style="color: white;font-family: 'kanit',sans-serif;">โทร : 0-2138-2437 , มือถือ : 096-978-6768 , Email
+                : vr-painting@hotmail.com</h6>
+
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!--
+
+
+
+            <div class="column middle"
+            style="background-attachment:fixed;background-image:url(img/Banner2.png);background-repeat:no-repeat;max-width: 1000;background-color: rgb(23, 142, 247);">
+            <h2>ความหมายของสีฝุ่น?</h2>
+            <img src="img/Powdercoat.png" class="responsive" width="500" height="200"
+                style="padding-top: 20px; padding-bottom: 15px;">
+            <button style="background-color: rgb(12, 9, 240);"><a
+                    style="text-decoration: none;font-family:'kanit',sans-serif;color: aliceblue;"
+                    href="PowderCoat.html">อ่านเพิ่มเติม</a></button><br />
+
+
+            <h2 style="padding-top:70px;">ขั้นตอนก่อนขึ้นพ่นสีมีอะไรบ้าง?</h2>
+            <img src="img/vr-pic02.png" class="responsive" width="620" height="300"
+                style=" max-width: 650px; padding-top: 20px; padding-bottom: 15px;">
+            <button style="background-color: rgb(12, 9, 240);"><a
+                    style="text-decoration: none;font-family:'kanit',sans-serif;color: aliceblue;"
+                    href="การเตรียมผิว.html">อ่านเพิ่มเติม</a></button><br />
+
+            <h2 style="padding-top: 70px;">ประวัติความเป็นมา</h2>
+            <img src="img/BG.jpg" class="responsive" width="620" height="300"
+                style=" max-width: 650px; padding-top: 20px; padding-bottom: 15px;">
+            <button style="background-color: rgb(12, 9, 240);"><a
+                    style="text-decoration: none;font-family:'kanit',sans-serif;color: aliceblue;"
+                    href="vr-painting.html">อ่านเพิ่มเติม</a></button><br />
+        </div>
+
+
+
+
+
+
+                <div class="column side">
+            <div class="column side">
+                <form action="/action_page.php" method="post"
+                    style="background-attachment:fixed;background-image:url(img/Banner2.png);background-repeat:no-repeat;max-width: 1000;background-color: rgb(23, 142, 247);">
+                    <div class="imgcontainer">
+                        <h6 style="color: white;">LOG IN FOR ADMIN ONLY</h6>
+                    </div>
+
+                    <div class="containerlogin">
+                        <label style="margin: 8px 15px;" for="uname"><b style="color: white;">Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label style="margin: 8px 15px;" for="psw"><b style="color: white;">Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button style="  background-color: #4CAF50;
+                      color: white;
+                      padding: 10px 20px;
+                      margin: 8px 50px;
+                      border: none;
+                      cursor: pointer;
+                      width: 150px;
+                    " type="submit">Login</button>
+
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+-->
