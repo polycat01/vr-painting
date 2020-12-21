@@ -33,18 +33,6 @@ router.get('/contact-us', (req, res)=>{
   res.sendFile(path.join(__dirname, 'views', 'Contact.html'));
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 router.get('/Data', (req, res) => {
   Food.find().exec((err, data) => {
     if (err) return res.status(400).send(err);
