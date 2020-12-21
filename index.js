@@ -32,10 +32,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 const server = http.createServer(app);
-app.listen(port, () => {
-  console.log("[success] task 1 : listening on port " + port);
+app.listen(PORT, () => {
+  console.log("[success] task 1 : listening on port " + PORT);
 });
 
 app.get("/", (req, res) => {
