@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>VR-PAINTING WEB PAGE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/Contentstyle.css" type="text/css" />
+<link rel="stylesheet" href="/css/About.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/Contact.css" type="text/css" />
+
+
+<script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+<body>
+    <header>
+        <img src="">
+    </header>
+    <div class="row">
+        <div class="column side">
+            <div class="nav">
+                <ul>
+                    <li class="Home"><a href="/">กลับสู่หน้าหลัก</a></li>
+                    <li class="Contact"><a class="active" href="/contact">Contact Us</a></li>
+                    <li class="VR-PAINTING"><a href="/location">Location</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column middle"
+            style="background-attachment:fixed;background-image:url(/img/Banner2.png);background-repeat:no-repeat;max-width: 1000;background-color: rgb(23, 142, 247);">
+            <div class="nav">
+                <ul>
+                    <li class="Home">หน้าหลัก</li>
+                    <p>></p>
+                    <li class="Vr-painting">Contact Us</li>
+                </ul>
+                <div class="fcf-body">
+
+                    <div id="fcf-form">
+                        <h3 class="fcf-h3">Contact Us</h3>
+
+                        <form id="fcf-form-id" class="fcf-form-class" method="post" action="/contact/Success">
+
+                            <div class="fcf-form-group">
+                                <label for="Name" class="fcf-label">Your name</label>
+                                <div class="fcf-input-group">
+                                    <input type="text" id="name" name="name" class="fcf-form-control" >
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label for="Email" class="fcf-label">Your email address</label>
+                                <div class="fcf-input-group">
+                                    <input type="email" id="email" name="email" class="fcf-form-control" >
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label for="Message" class="fcf-label">Your message</label>
+                                <div class="fcf-input-group">
+                                    <textarea id="Message" name="Message" class="fcf-form-control" rows="8" cols="80"
+                                        maxlength="4000" ></textarea>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <button type="submit" id="fcf-button"
+                                    class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                            </div>
+                        </form>
+                        <script>
+                            CKEDITOR.replace( 'Message' );
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column side">
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B9%88%E0%B8%99%E0%B8%AA%E0%B8%B5%E0%B8%9D%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B8%94-By-VRpainting-794227757645326%2F&tabs=timeline&width=260&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="280" height="300" class="responsive2" style="border:none;overflow:hidden" scrolling="no"
+                frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+        </div>
+
+    </div>
+    <footer class="footer-container">
+        <div class="padding-16">
+            <p style="color:white;">Copyright © 2020 All Rights Reserved</p>
+            <img src="/img/LOGO.png" width="25" height="15">
+            <p style="color: white;font-size:10px;font-family: 'kanit',sans-serif;">หจก.วีอาร์ เพ้นท์ติ้ง โพดักส์
+            </p>
+            <p style="color: white;font-size:10px;font-family: 'kanit',sans-serif;">71/3 หมู่ที่ 4 ต.แพรกษา อ.เมือง
+                จ.สมุทรปราการ 10280</p>
+            <h6 style="color: white;font-family: 'kanit',sans-serif;">โทร : 0-2138-2437 , มือถือ : 096-978-6768 , Email : vr-painting@hotmail.com</h6>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -4,15 +4,14 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-validator": "^6.8.1",
     "mongoose": "^5.11.8"
   },
   "engines": {
     "node": "15.4.0",
     "nmp": "7.0.15"
   },
-
-    "scripts": {
-        "start": "node index.js"
-    }
-
+  "scripts": {
+    "start": "node index.js"
+  }
 }
