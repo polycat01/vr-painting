@@ -33,6 +33,18 @@ router.get('/contact', (req, res)=>{
   res.sendFile(path.join(__dirname, 'views', 'Contact.html'));
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
 router.get('/Data', (req, res) => {
   Food.find().exec((err, data) => {
     if (err) return res.status(400).send(err);
@@ -51,6 +63,9 @@ router.get("/:_id", (req, res) => {
 // POST (create new data)
 router.post("/Success", (req, res) => {
   var obj = new Food(req.body);
+  var name = req.body.name;
+  var email = req.body.email;
+  var massage = req.body.massage;
   obj.save((err, data) => {
     if (err) return res.status(400).send(err);
     res.status(200).send("เพิ่มข้อมูลเรียบร้อย");
