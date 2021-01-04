@@ -21,7 +21,7 @@ router.get('/Data', (req, res) => {
         var obj = new Contact(req.body);
         obj.save(() => {
             res.status(200).send("เพิ่มข้อมูลเรียบร้อย");
-            console.log(req.body);
+            console.log(obj);
         });
     });
 
