@@ -29,8 +29,15 @@ router.post('/Success', (req, res) => {
             console.log(data);
         });
     });
-
-    module.exports = router;
+router.delete('/Data', (req, res)=> {
+    const data = Contact.find().exec();
+        data.splice(()=>{
+        console.log("delete data!");
+        console.log(data);
+        res.send(data);
+      });
+    });
+module.exports = router;
 
 
 
