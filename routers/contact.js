@@ -25,9 +25,13 @@ router.post('/Success', (req, res) => {
         });
         console.log(req.body.name +""+req.body.email+""+req.body.Message);
         data.save(() => {
-            res.status(200).send("เพิ่มข้อมูลเรียบร้อย");
+            res.sendFile(path.join(__dirname, 'views', 'Success.html'));
             console.log(data);
         });
     });
 
     module.exports = router;
+
+
+
+ 
