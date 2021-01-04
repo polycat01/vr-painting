@@ -16,12 +16,17 @@ router.get('/Data', (req, res) => {
         res.status(200).send(data);
     });
 });
-    router.post('/Success', (req, res) => {
-        console.log(req.body);
-        var obj = new Contact(req.body);
-        obj.save(() => {
+router.post('/Success', (req, res) => {
+        const data = new Contact({
+            _id: new mongoose.Types.ObjectId(),
+            name: req.body.name,
+            email: req.body.email,
+            Message: req.body.Message
+        });
+        console.log(req.body.name +""+req.body.email+""+req.body.Message);
+        data.save(() => {
             res.status(200).send("เพิ่มข้อมูลเรียบร้อย");
-            console.log(obj);
+            console.log(data);
         });
     });
 
