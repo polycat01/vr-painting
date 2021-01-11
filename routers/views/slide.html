@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>VR-PAINTING WEB PAGE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/Contentstyle.css" type="text/css" />
+<link rel="stylesheet" href="/css/About.css" type="text/css" />
+<link rel="stylesheet" href="/css/Gallery.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slick.css">
+
+
+<body>
+    <header>
+
+
+    </header>
+    <div class="row">
+        <div class="column side">
+            <div class="nav">
+                <ul>
+
+                    <li class="Home"><a href="/">กลับสู่หน้าหลัก</a></li>
+                    <li class="VR-PAINTING"><a href="/About/vr-painting">Vr-painting</a></li>
+                    <li class="powder coating"><a href="/About/powderCoat">powder coating</a></li>
+                    <li class="การเตรียมผิว"><a href="/About/preparation">การเตรียมผิว</a></li>
+                    <li class="ตัวอย่างผลงาน"><a class="active" href="#">ตัวอย่างผลงาน</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="column middle"
+                style="background-attachment:fixed;background-image:url(/img/Banner2.png);background-repeat:no-repeat;max-width: 1000;background-color: rgb(23, 142, 247);">
+                <div class="nav">
+                    <ul>
+                        <li class="Home">About</li>
+                        <p>></p>
+                        <li class="Powder coating">ตัวอย่างผลงาน</li>
+                    </ul>
+                </div>
+                <div>
+
+                    <h2 style="text-align:center">ตัวอย่างผลงานของ วีอาร์ เพ้นท์ติ้ง</h2>
+
+                    <div class="container">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="/img/vr-pic03.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="/img/vr-pic04.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="/img/vr-pic05.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="/img/vr-pic06.JPG" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="/img/vr-pic07.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="/img/vr-pic08.JPG" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="/img/vr-pic08.JPG" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <div class="carousel clearfix">
+                            <div class="carousel-view clearfix">
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+                                <div class="box">
+                                    <img class="demo cursor" src="/img/vr-pic03.jpg" style="width:100%"
+                                        onclick="currentSlide(1)" alt="โครงรถจักรยานยนต์">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/img/vr-pic04.jpg" style="width:100%"
+                                        onclick="currentSlide(2)" alt="ตะแกรงเหล็กสีฟ้า">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/img/vr-pic05.jpg" style="width:100%"
+                                        onclick="currentSlide(3)" alt="อะไหล่รถไถของบริษัทคูโบต้า">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/img/vr-pic06.JPG" style="width:100%"
+                                        onclick="currentSlide(4)" alt="บันไดสีเหลือง">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/img/vr-pic07.jpg" style="width:100%"
+                                        onclick="currentSlide(5)" alt="ตู้หรือเฟอร์นิเจอร์ต่างๆ">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/img/vr-pic08.JPG" style="width:100%"
+                                        onclick="currentSlide(6)" alt="โต๊ะเหล็ก">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="/img/vr-pic08.JPG" style="width:100%"
+                                        onclick="currentSlide(6)" alt="โต๊ะเหล็ก">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="column side">
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B9%88%E0%B8%99%E0%B8%AA%E0%B8%B5%E0%B8%9D%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B8%94-By-VRpainting-794227757645326%2F&tabs=timeline&width=260&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="280" height="300" class="responsive2" style="border:none;overflow:hidden" scrolling="no"
+                frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $('.carousel-view').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
