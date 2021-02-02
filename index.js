@@ -13,7 +13,9 @@ const preparationRouter=require('./routers/preparation');
 const exampleRouter=require('./routers/example');
 const locationRouter=require('./routers/location');
 const contactRouter=require('./routers/contact');
-const successRouter=require('./routers/success')
+const successRouter=require('./routers/success');
+const AdviceRouter=require('./routers/Advices');
+const ThicknessRouter=require('./routers/Advice01')
 
 
 
@@ -39,6 +41,8 @@ app.use(bodyParser.json());
 //Use Routers
 app.use('/' ,indexRouter);
 app.use('/About/powderCoat' ,powderRouter);
+app.use('/Advice' ,AdviceRouter);
+app.use('/Advice/Packed' ,ThicknessRouter);
 app.use('/About/vr-painting' ,vrRouter);
 app.use('/About/preparation' ,preparationRouter);
 app.use('/About/example-work' ,exampleRouter);
