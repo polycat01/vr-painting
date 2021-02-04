@@ -16,6 +16,7 @@ const contactRouter=require('./routers/contact');
 const successRouter=require('./routers/success');
 const AdviceRouter=require('./routers/Advices');
 const ThicknessRouter=require('./routers/Advice01')
+const ProductRouter=require('./routers/Advice02')
 
 
 
@@ -49,6 +50,7 @@ app.use('/About/example-work' ,exampleRouter);
 app.use('/location' ,locationRouter);
 app.use('/contact' ,contactRouter);
 app.use('/Success',successRouter);
+app.use('/Advice/material' ,ProductRouter);
 
 
 module.exports = router;
