@@ -15,8 +15,8 @@ const locationRouter=require('./routers/location');
 const contactRouter=require('./routers/contact');
 const successRouter=require('./routers/success');
 const AdviceRouter=require('./routers/Advices');
-const ThicknessRouter=require('./routers/Advice01')
-const ProductRouter=require('./routers/Advice02')
+const ThicknessRouter=require('./routers/Advice01');
+const ProductRouter=require('./routers/Advice02');
 
 
 
